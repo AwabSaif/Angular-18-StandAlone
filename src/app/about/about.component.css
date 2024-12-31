@@ -1,0 +1,41 @@
+/* تنسيق الصفحة */
+.about-page {
+    font-family: 'Arial', sans-serif;
+    direction: rtl; /* تحديد الاتجاه من اليمين إلى اليسار */
+    text-align: right;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  /* ترويسة الصفحة */
+  .about-header {
+    background-color: #003366; /* اللون الأزرق الداكن */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .about-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 18px;
+  }
+  
+  /* المحتوى */
+  .about-content {
+    margin-top: 30px;
+  }
+  
+  .about-content h2 {
+    font-size: 24px;
+    color: #003366;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    color: #333;
+  }
+  

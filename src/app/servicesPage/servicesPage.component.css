@@ -1,0 +1,50 @@
+
+.services-page {
+    font-family: 'Arial', sans-serif;
+    direction: rtl; /* تحديد الاتجاه من اليمين إلى اليسار */
+    text-align: right;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  /* ترويسة الصفحة */
+  .services-header {
+    background-color: #003366; /* اللون الأزرق الداكن */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .services-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .services-header p {
+    font-size: 18px;
+  }
+  
+  /* قائمة الخدمات */
+  .services-list {
+    margin-top: 30px;
+  }
+  
+  .service-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #333;
+  }
+  

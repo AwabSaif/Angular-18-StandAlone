@@ -1,0 +1,68 @@
+/* تنسيق الصفحة */
+.contact-page {
+    font-family: 'Arial', sans-serif;
+    direction: rtl; /* تحديد الاتجاه من اليمين إلى اليسار */
+    text-align: right;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .contact-header {
+    background-color: #003366; /* اللون الأزرق الداكن */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    font-size: 18px;
+  }
+  
+  /* تنسيق النموذج */
+  .contact-form-section {
+    margin-top: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea.form-input {
+    height: 150px;
+  }
+  
+  .submit-btn {
+    background-color: #003366; /* اللون الأزرق الداكن */
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  

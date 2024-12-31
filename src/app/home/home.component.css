@@ -1,0 +1,52 @@
+
+.home-page {
+    font-family: 'Arial', sans-serif;
+    direction: rtl; /* تحديد الاتجاه من اليمين إلى اليسار */
+    text-align: right;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+
+  .home-header {
+    background-color: #003366; /* اللون الأزرق الداكن */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .home-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .home-header p {
+    font-size: 18px;
+  }
+  
+  /* المحتوى */
+  .home-content {
+    margin-top: 30px;
+  }
+  
+  .home-content h2 {
+    font-size: 24px;
+    color: #003366;
+  }
+  
+  .home-content p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .home-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .home-content li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  

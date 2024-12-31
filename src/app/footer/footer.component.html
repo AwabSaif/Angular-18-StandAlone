@@ -1,0 +1,24 @@
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-about">
+      <h2>نبذة عنا</h2>
+      <p>نحن شركة مبتكرة تقدم خدمات متنوعة لعملائنا. نؤمن بتقديم حلول فعالة في عالم الأعمال والتكنولوجيا.</p>
+    </div>
+
+    <div class="footer-links">
+      <h2>روابط أخرى</h2>
+      <ul>
+        <li><a [routerLink]="['/about']">من نحن</a></li>
+        <li><a [routerLink]="['/services']">خدماتنا</a></li>
+        <li><a [routerLink]="['/contact']">اتصل بنا</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h2>اتصل بنا</h2>
+      <p><strong>العنوان:</strong>{{address}}</p>
+      <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@example.com">{{email}}</a></p>
+      <p><strong>خريطة:</strong> <a href="https://www.google.com/maps" target="_blank">عرض الخريطة</a></p>
+    </div>
+  </div>
+</footer>
