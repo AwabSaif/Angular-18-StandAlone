@@ -1,0 +1,78 @@
+<app-notification></app-notification>
+<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+  <div class="form-group">
+    <label for="name">الاسم:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="contactData.name"
+      required
+      minlength="3"
+      #nameInput="ngModel"
+      class="form-input"
+      placeholder="أدخل اسمك"
+    />
+    @if (nameInput.invalid && nameInput.touched) {
+    <div class="error">
+      @if(nameInput.errors?.['required']){
+      <small>الاسم مطلوب.</small>
+      } @if (nameInput.errors?.['minlength']){
+
+      <small> الاسم يجب أن يكون على الأقل 3 أحرف. </small>
+      }
+    </div>
+    }
+  </div>
+
+  <div class="form-group">
+    <label for="email">البريد الإلكتروني:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="contactData.email"
+      required
+      email
+      #emailInput="ngModel"
+      class="form-input"
+      placeholder="أدخل بريدك الإلكتروني"
+    />
+    @if(emailInput.invalid && emailInput.touched){
+    <div class="error">
+      @if (emailInput.errors?.['required']){
+      <small>البريد الإلكتروني مطلوب.</small>
+      } @if (emailInput.errors?.['email']){
+      <small> البريد الإلكتروني غير صحيح. </small>
+      }
+    </div>
+    }
+  </div>
+
+  <div class="form-group">
+    <label for="message">الرسالة:</label>
+    <textarea
+      id="message"
+      name="message"
+      [(ngModel)]="contactData.message"
+      required
+      minlength="10"
+      #messageInput="ngModel"
+      class="form-input"
+      placeholder="أدخل رسالتك"
+    ></textarea>
+    @if(messageInput.invalid && messageInput.touched){
+    <div class="error">
+      @if (messageInput.errors?.['required']) {
+      <small>الرسالة مطلوبة.</small>
+      } @if (messageInput.errors?.['minlength']) {
+      <small> الرسالة يجب أن تحتوي على الأقل 10 أحرف. </small>
+      }
+    </div>
+    }
+  </div>
+
+  <button type="submit" [disabled]="!contactForm.valid" class="submit-btn">
+    إرسال
+  </button>
+</form>

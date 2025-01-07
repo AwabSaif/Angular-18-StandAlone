@@ -6,3 +6,24 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
   }
+  
+  
+  .service-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #333;
+  }
+  

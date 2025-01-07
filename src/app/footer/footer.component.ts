@@ -10,8 +10,8 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  email = "awabtaz9090@gmail.com";
-  address = " شارع.....، جدة، السعودية"
+  email:string = "awabtaz9090@gmail.com";
+  address:string = " جدة، السعودية"
   constructor() { }
 
   ngOnInit() {

@@ -5,45 +5,6 @@
   </header>
 
   <section class="contact-form-section">
-    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-      <div class="form-group">
-        <label for="name">الاسم:</label>
-        <input 
-          type="text" 
-          id="name" 
-          name="name" 
-          [(ngModel)]="contactData.name" 
-          required 
-          class="form-input" 
-          placeholder="أدخل اسمك">
-      </div>
-
-      <div class="form-group">
-        <label for="email">البريد الإلكتروني:</label>
-        <input 
-          type="email" 
-          id="email" 
-          name="email" 
-          [(ngModel)]="contactData.email" 
-          required 
-          class="form-input" 
-          placeholder="أدخل بريدك الإلكتروني">
-      </div>
-
-      <div class="form-group">
-        <label for="message">الرسالة:</label>
-        <textarea 
-          id="message" 
-          name="message" 
-          [(ngModel)]="contactData.message" 
-          required 
-          class="form-input" 
-          placeholder="أدخل رسالتك"></textarea>
-      </div>
-
-      <button type="submit" [disabled]="!contactForm.valid" class="submit-btn">
-        إرسال
-      </button>
-    </form>
+    <app-contactForm></app-contactForm>
   </section>
 </div>

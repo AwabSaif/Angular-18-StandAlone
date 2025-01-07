@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';  // استيراد RouterModule
 
@@ -11,11 +10,13 @@ interface Nav {
 @Component({
   selector: 'app-navbar',
   standalone: true,  
-  imports: [CommonModule, RouterModule], 
+  imports: [ RouterModule], 
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  srcLogo: string = 'awab logo favicon-1000px 1500px without name.svg'
+  
   nav: Nav[] = [
     { link: '/', name: 'الصفحة الرئيسية', exact: true },
     { link: '/about', name: 'من نحن', exact: true },
